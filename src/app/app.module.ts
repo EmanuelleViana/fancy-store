@@ -1,3 +1,4 @@
+import { SidebarModule } from './components/sidebar/sidebar.module';
 import { HomeModule } from './home/home.module';
 import { NavbarModule } from './components/navbar/navbar.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -14,7 +15,8 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule,
     NavbarModule,
-    HomeModule
+    HomeModule,
+    SidebarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
