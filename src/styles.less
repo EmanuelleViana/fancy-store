@@ -2,10 +2,16 @@
     ADDITIONAL DEMO STYLE, NOT IMPORTANT TO MAKE THINGS WORK BUT TO MAKE IT A BIT NICER :)
 */
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+@import "https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&display=swap";
 
+// Estilos gerais
 body {
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
+}
+.main-container {
+    display: flex;
+    width: 1120px;
 }
 
 p {
@@ -21,6 +27,33 @@ a, a:hover, a:focus {
     text-decoration: none;
     transition: all 0.3s;
 }
+// navbar
+.navbar {
+    padding: 20px 70px;
+}
+
+.navbar .icon img {
+    width: 30px;
+    margin-right: 20px;;
+    height:30px;
+    color: #999;
+    cursor: pointer;
+
+}
+.nav-separador {
+    height: 2px;
+    width: calc(100vw - 50px);
+    text-align: center;
+    background: #f0efef;
+    margin: 0 auto;
+}
+
+ul.navbar-nav.mr-auto {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+}
+// sidebar
 .wrapper {
   display: flex;
   width: 100%;
@@ -34,6 +67,8 @@ a, a:hover, a:focus {
     min-width: 250px;
     max-width: 250px;
     min-height: 100vh;
+    font-family: 'Mukta', sans-serif;
+    text-transform: uppercase;
 }
 
 #sidebar .sidebar-header {
@@ -72,6 +107,11 @@ ul ul a {
 }
 
 
+//* Home */
+
+.home img {
+    padding-top: 20px;
+}
 .produtos {
     display: flex;
     max-width: 950px;
