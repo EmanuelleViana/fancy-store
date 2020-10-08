@@ -1,8 +1,8 @@
-import { ProdutosModule } from './../components/produtos/produtos.module';
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeComponent } from './home.component';
+import { NgModule } from '@angular/core';
+import { ProdutosModule } from './../components/produtos/produtos.module';
 import { HomeRoutingModule } from './home-routing.module';
+import { HomeComponent } from './home.component';
 
 
 
@@ -12,6 +12,6 @@ import { HomeRoutingModule } from './home-routing.module';
     CommonModule,
     HomeRoutingModule,
     ProdutosModule
-  ]
+   ]
 })
 export class HomeModule { }
