@@ -1,3 +1,4 @@
+import { SidebarModule } from './../components/sidebar/sidebar.module';
 import { ItemProdutoModule } from './../components/item-produto/item-produto.module';
 import { ProdutosRoutingModule } from './produtos-routing.module';
 import { NgModule } from '@angular/core';
@@ -9,7 +10,8 @@ import { ProdutosComponent } from './produtos.component';
   imports: [
     CommonModule,
     ProdutosRoutingModule,
-    ItemProdutoModule
+    ItemProdutoModule,
+    SidebarModule
   ]
 })
 export class ProdutosModule { }

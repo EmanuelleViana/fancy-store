@@ -1,3 +1,4 @@
+import { ProdutosService } from './produtos.service';
 import { Component, OnInit } from '@angular/core';
 import { Produto } from '../models/produto.model';
 
@@ -8,12 +9,15 @@ import { Produto } from '../models/produto.model';
 })
 export class ProdutosComponent implements OnInit {
   public listaProdutos: Array<Produto>;
-  constructor() { }
+
+  constructor(private service: ProdutosService) { }
 
   ngOnInit(): void {
+    this.iniciarProdutos();
   }
-  public iniciarProdutos(): void {
 
+  public iniciarProdutos(): void {
+    this.listaProdutos = this.service.obterProdutos();
   }
 
 }

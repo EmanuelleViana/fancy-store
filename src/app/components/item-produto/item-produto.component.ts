@@ -14,5 +14,8 @@ export class ItemProdutoComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  click(e){
+console.log('a',e)
+  }
 
 }

@@ -1,3 +1,4 @@
+import { ProdutosModule } from './produtos/produtos.module';
 import { SidebarModule } from './components/sidebar/sidebar.module';
 import { HomeModule } from './home/home.module';
 import { NavbarModule } from './components/navbar/navbar.module';
@@ -16,6 +17,7 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     NavbarModule,
     HomeModule,
+    ProdutosModule,
     SidebarModule
   ],
   providers: [],
